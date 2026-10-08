@@ -1,0 +1,17 @@
+{
+  "name": "jwt-bcrypt-sql",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "tsc": "tsc --noEmit",
+    "debug": "bun --inspect-wait=localhost:6499/debug",
+    "debug:watch": "bun --watch --inspect-wait=localhost:6499/debug"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
