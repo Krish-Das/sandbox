@@ -1,15 +1,21 @@
 # Jwt Bcrypt Sql
 
-To install dependencies:
+Install dependencies:
 
 ```sh
 bun install
 ```
 
-To run:
+Run production:
 
 ```sh
-bun run index.ts
+bun run start
 ```
 
-This project was created using `bun init` in bun v1.4.0. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+Run developement:
+
+```sh
+bun run dev
+```
+
+open [http://localhost:3000](http://localhost:3000)
