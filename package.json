@@ -1,24 +1,24 @@
 {
-  "name": "jwt-bcrypt-sql",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
-    "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check",
-    "typecheck": "tsc --noEmit",
-    "tsc": "tsc --noEmit",
-    "debug": "bun --inspect-wait=localhost:6499/debug",
-    "debug:watch": "bun --watch --inspect-wait=localhost:6499/debug"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
-    "oxlint-tsgolint": "^7.0.2003e"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  }
+    "name": "jwt-bcrypt-sql",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix",
+        "fmt": "oxfmt",
+        "fmt:check": "oxfmt --check",
+        "typecheck": "tsc --noEmit",
+        "tsc": "tsc --noEmit",
+        "debug": "bun --inspect-wait=localhost:6499/debug",
+        "debug:watch": "bun --watch --inspect-wait=localhost:6499/debug"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "oxfmt": "^0.72.0",
+        "oxlint": "^1.87.0",
+        "oxlint-tsgolint": "^7.0.2003e"
+    },
+    "peerDependencies": {
+        "typescript": "^7"
+    }
 }
