@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 
-type Dimentions = { width: number; height: number }
-export function UseEffect() {
-    const [dimentions, setDimentions] = useState<Dimentions>({
+export type WindowSize = { width: number; height: number }
+export function useWindowSize(): WindowSize {
+    const [size, setSize] = useState<WindowSize>({
         width: window.innerWidth,
         height: window.innerHeight,
     })
 
     useEffect(() => {
         const handleResize = () => {
-            setDimentions({
+            setSize({
                 width: window.innerWidth,
                 height: window.innerHeight,
             })
@@ -18,11 +18,5 @@ export function UseEffect() {
         return () => window.removeEventListener("resize", handleResize)
     }, [])
 
-    return (
-        <code className="text-start font-mono">
-            <pre>
-                {dimentions.width}&times;{dimentions.height}
-            </pre>
-        </code>
-    )
+    return size
 }
